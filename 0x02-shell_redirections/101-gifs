@@ -1,2 +1,2 @@
 #!/bin/bash
-ls *gif -aSR | printf "%f\n"
+find . -type f -name "*.gif" -mindepth 1 -printf "%f\n" | sort -n
